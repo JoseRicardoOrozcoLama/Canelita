@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f3">
+  <title>Para mi Canelita 🌷</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div id="particles" aria-hidden="true"></div>
+
+  <main class="page">
+    <p class="eyebrow">UN DETALLITO HECHO CON CARIÑO</p>
+    <h1>Feliz cumpleaños,<br><span>Canelita</span> <span class="title-flower">🌷</span></h1>
+    <p class="intro" id="intro">Hoy el mundo tiene una razón más para sonreír… y yo una excusa perfecta para recordarte lo especial que eres. 💗</p>
+
+    <section class="gift-section" id="giftSection" aria-label="Regalo sorpresa">
+      <button class="gift-button" id="giftButton" aria-label="Abrir el regalo sorpresa">
+        <span class="gift-glow"></span>
+        <span class="gift-box" aria-hidden="true">
+          <span class="gift-lid"></span>
+          <span class="gift-bow"></span>
+          <span class="gift-ribbon"></span>
+          <span class="gift-front-heart">♥</span>
+        </span>
+      </button>
+      <p class="tap-hint" id="tapHint">Toca el regalito para descubrir tu sorpresa</p>
+      <button class="primary-button" id="openLetterButton">Abrir mi cartita 💌</button>
+      <button class="music-button" id="musicButton" aria-pressed="false">♫ Activar música de fondo</button>
+    </section>
+
+    <section class="letter-wrap" id="letterWrap" aria-hidden="true">
+      <article class="letter">
+        <div class="letter-top">✿ ───────── ✿</div>
+        <p class="letter-kicker">PARA TI, CANELITA</p>
+        <h2>Unas palabritas para tu día 💗</h2>
+        <div class="letter-body" id="letterBody">
+          <p>Feliz cumpleaños, Canelita. 🥳🌷</p>
+          <p>Espero que hoy recibas muchísimo cariño, que te sobren motivos para sonreír y que este nuevo año de vida te regale momentos preciosos.</p>
+          <p>Quería tener un detalle contigo que fuera un poquito diferente, algo hecho con dedicación y pensando en ti. Porque incluso las cosas pequeñas pueden guardar un cariño enorme.</p>
+          <p>Gracias por las sonrisas, por los momentos compartidos y por esa manera tan tuya de hacer que un día común se sienta especial.</p>
+          <p>Que nunca te falten sueños por cumplir, personas que te quieran bonito y razones para sentirte orgullosa de ti.</p>
+          <p class="final-line">Disculpa que te haya entregado el regalo un dia despues jajaja</p>
+          <p class="signature">Con mucho cariño,<br><span>tu pajarito💕</span></p>
+        </div>
+        <div class="letter-bottom">Hecho especialmente para ti · ♥</div>
+      </article>
+      <button class="secondary-button" id="closeLetterButton">Guardar la cartita ♡</button>
+    </section>
+
+    <footer>Un pequeño detalle, hecho con cariño. <span>♥</span></footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <audio id="musicaFondo" src="cancion.mp3" preload="auto" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
